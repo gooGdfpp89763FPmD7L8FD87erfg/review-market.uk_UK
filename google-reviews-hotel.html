@@ -559,18 +559,6 @@
         </div>
     </section>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">They tried us, they stayed.</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card"><img src="buy-real-google-reviews.webp" alt="buy real google reviews hotel" title="improve google rating hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="buy-5-star-google-reviews.webp" alt="buy google reviews hotel" title="buy negative google reviews hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="improve-google-rating.webp" alt="boost google reviews hotel" title="fake google reviews hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="boost-google-reviews.webp" alt="delete google reviews hotel" title="delete google reviews hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="buy-reliable-google-reviews.webp" alt="buy google reviews hotel" title="buy google reviews hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-            </div>
-        </div>
-    </section>
 
     <section class="seo-content">
         <div class="container">
@@ -672,7 +660,7 @@
                 const header = document.querySelector('.header');
                 header.style.boxShadow = window.scrollY > 50 ? '0 4px 20px rgba(0,0,0,0.1)' : '0 4px 15px rgba(0,0,0,0.08)';
             });
-            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .testimonial-card, .faq-item');
+            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .faq-item');
             const observer = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
             animateElements.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; observer.observe(el); });
             let animated = false;
